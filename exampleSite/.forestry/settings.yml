@@ -33,9 +33,9 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.79.0
-  preview_output_directory: "/exampleSite"
+  preview_output_directory: exampleSite
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d exampleSite
 version: 0.79.0
